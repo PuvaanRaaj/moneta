@@ -1,0 +1,13 @@
+# Never publish these to npm
+.github/
+tests/
+coverage/
+*.tsbuildinfo
+tsup.config.ts
+vitest.config.ts
+biome.json
+tsconfig.json
+.npmrc
+.gitignore
+SECURITY.md
+src/

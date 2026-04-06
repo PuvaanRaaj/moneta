@@ -1,0 +1,27 @@
+version: 2
+
+updates:
+  # Keep npm dependencies up to date — catches CVEs quickly
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: '09:00'
+    open-pull-requests-limit: 5
+    groups:
+      devDependencies:
+        dependency-type: development
+    ignore:
+      - dependency-name: '*'
+        update-types: ['version-update:semver-major']
+        # Major bumps require manual review — avoid breaking changes silently
+
+  # Keep GitHub Actions pinned versions up to date
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: '09:00'
+    open-pull-requests-limit: 3
