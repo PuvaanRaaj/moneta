@@ -1,5 +1,5 @@
 {
-  "name": "moneta",
+  "name": "@puvaanraaj/moneta",
   "version": "0.1.0",
   "description": "Immutable, BigInt-precision monetary values for TypeScript. No float errors. Currency-safe by design.",
   "keywords": ["money", "currency", "finance", "bigint", "typescript", "safe-money", "payments"],
