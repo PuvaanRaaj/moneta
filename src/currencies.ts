@@ -37,7 +37,7 @@ export const CURRENCIES = {
   USD: { code: 'USD', decimals: 2, name: 'US Dollar' },
   VND: { code: 'VND', decimals: 0, name: 'Vietnamese Dong' },
   ZAR: { code: 'ZAR', decimals: 2, name: 'South African Rand' },
-} as const
+} as const;
 
-export type CurrencyCode = keyof typeof CURRENCIES
-export type CurrencyDef = (typeof CURRENCIES)[CurrencyCode]
+export type CurrencyCode = keyof typeof CURRENCIES;
+export type CurrencyDef = (typeof CURRENCIES)[CurrencyCode];
